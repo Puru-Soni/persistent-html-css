@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> </head>
+	<body>
+		<form method="post" action="display.php">
+			<h1>Registration Form</h1>
+			<label>
+				Name :
+				<input type="text" name="name" value="Name" /> </label
+			><br />
+			<label>
+				Username :
+				<input type="text" name="userName" value="Username" /> </label
+			><br />
+			<label>
+				Password :
+				<input type="password" name="password" value="Password" /> </label
+			><br />
+			<label>
+				Re-enter Password :
+				<input
+					type="password"
+					name="re-EnterPassword"
+					value="Re-enter Password"
+				/> </label
+			><br />
+			<label>
+				Address :
+				<textarea name="address"></textarea></label
+			><br />
+			<label>
+				Gender :
+				<input type="radio" name="gender" value="male" /> Male
+				<input type="radio" name="gender" value="female" /> Female </label
+			><br />
+			<label>
+				District Name :
+				<select name="districtName">
+					<option value="New York">New York</option>
+					<option value="Coimbatore">Coimbatore</option>
+					<option value="india">India</option>
+				</select> </label
+			><br />
+			<label
+				>Events :
+				<label>
+					<input type="checkbox" name="events[]" value="Wedding" />
+					Wedding
+				</label>
+				<label>
+					<input type="checkbox" name="events[]" value="Corporate" />
+					Corporate
+				</label>
+				<label>
+					<input type="checkbox" name="events[]" value="Social" />
+					Social
+				</label>
+			</label>
+			<br />
+			<button type="submit" name="register" value="Register">Register</button
+			><br />
+		</form>
+	</body>
+</html>

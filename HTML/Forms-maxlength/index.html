@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form method="post" action="display.php">
+			<h1>Registration form</h1>
+
+			Name : <input type="text" name="name" id="name" /><br />
+			UserName : <input type="text" name="userName" id="userName" /><br />
+			Password : <input type="text" name="password" id="password" /><br />
+			Mobile Number :
+			<input
+				type="text"
+				name="mobilenumber"
+				id="mobilenumber"
+				maxlength="10"
+			/><br />
+			Address :
+			<textarea name="address" id="address" maxlength="200"></textarea><br />
+			<button name="register" type="submit">Register</button>
+		</form>
+	</body>
+</html>

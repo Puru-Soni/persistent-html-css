@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!--Fill Code here-->
+        <meta />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <style>
+            
+            @media (max-width:1024px){
+                body{
+                    width: 100%;
+                }
+            }
+
+            @media (max-width:991px){
+                body{
+                    width:85%;
+                }
+            }      
+
+            @media (max-width: 768px){
+                body{
+                    width: 70%;
+                }
+                .icons > span{
+                    display: none;
+                }
+            }
+            body{
+                text-align: center;
+            }
+
+            ul{
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+				padding: 10px 0;
+				overflow: hidden;
+            }
+
+            img{
+                width: 10px;
+            }
+
+            li{
+                float: center;
+            }
+
+            li:hover {
+				/* Enter your text here! */
+				background-color: #4169e1;
+				color: #ffffff;
+				text-align: center;
+				text-decoration: none;
+			}
+
+        </style>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<ul class="container">
+					<li class="icons usericon"><img src="./usericon.png"><span>ABOUT ME</span></li>
+					<li class="icons icon2"><img src="./icon-2.png"><span>RESUME</span></li>
+					<li class="icons icon3"><img src="./icon-3.png"><span>PORTFOLIO</span></li>
+					<li class="icons icon4"><img src="./icon-4.png"><span>CONTACT ME</span></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="detail-holder">
+				<h3>CONTACT ME</h3>
+				<hr />
+				<form action="">
+					<div class="form-group">
+						<label for="firstname">First Name</label><br />
+						<input type="text" name="firstname" id="firstname" />
+					</div>
+					<div class="form-group">
+						<label for="lastname">Last Name</label><br />
+						<input type="text" name="lastname" id="lastname" />
+					</div>
+					<div class="form-group">
+						<label for="dob">Date Of Birth</label><br />
+						<input type="text" name="dob" id="dob" />
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label><br />
+						<input type="text" name="email" id="email" />
+					</div>
+					<div class="form-group">
+						<label for="mobilenumber">Mobile</label><br />
+						<input type="text" name="mobilenumber" id="mobilenumber" />
+					</div>
+					<div class="form-group">
+						<label for="reason-select">Reason</label><br />
+						<select name="reason-select" id="reason-select">
+							<option value="Business">Business</option>
+							<option value="Tourist">Tourist</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="gender">Gender</label><br />
+						<input type="radio" name="gender" id="male" value="Male">Male</input>
+						<input type="radio" name="gender" id="female" value="Female">Female</input>
+					</div>
+					<div class="form-group">
+						<label for="contact">Prefferred Mode of Communication</label><br />
+						<input
+							type="checkbox"
+							name="contact"
+							value="Mobile"
+							id="contact-mobile"
+						>Mobile</input>
+						<input
+							type="checkbox"
+							name="contact"
+							value="Email"
+							id="contact-email"
+						>Email</input>
+					</div>
+					<div class="form-group">
+						<label for="textarea">Message</label><br />
+						<textarea
+							name="textarea"
+							id="textarea"
+							cols="50"
+							rows="2"
+						></textarea>
+					</div>
+					<input type="submit" value="Submit" />
+				</form>
+			</div>
+		</main>
+	</body>
+</html>
